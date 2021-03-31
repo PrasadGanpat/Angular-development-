@@ -1,0 +1,39 @@
+<div class="navbar navbar-default navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler01" aria-controls="navbarToggler01" aria-expanded="false" aria-label="Toggle navigation">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarToggler01">
+        <ul class="navbar-nav mr-auto  mt-lg-0">
+          <li class="nav-item active">
+            <img src="../assets/Images/Auction-img-01.jpg" class="img-fluid" alt="resized image" >
+          </li>
+       </ul>
+       <div class="form-inline">
+          <button class="btn btn-success my-2 my-sm-0 " [routerLink]="['/login']">Log Out</button>
+       </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+  <div class="card-deck">
+    <span *ngIf = "users != (exponentialBackoffTimer$ | async) ;else loading"></span>
+    <div class="row row-cols-1 row-cols-md-4">
+    <div *ngFor="let user of users" #loading >
+       <div class="col mb-5">
+          <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">{{user.associatedVehicle.make}} {{user.associatedVehicle.model}}</h5>
+            <p class="card-text">{{user.associatedVehicle.ez}} | {{user.associatedVehicle.mileageInKm}}km | {{user.associatedVehicle.fuelType}} | {{user.associatedVehicle.transmission}} <br/>
+            Current Highest Bid Value (in Euro)<b> : {{user.currentHighestBidValue | currency:'EUR'}}</b>
+            </p>
+            </div>
+              <img src="{{user.associatedVehicle.vehicleImages[0].url}}" class="img-thumbnail">
+            <div class="card-footer ">
+              <small class="text-muted ">{{user.remainingTimeInSeconds | date:'HH:mm:ss'}} remained Only  </small>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+

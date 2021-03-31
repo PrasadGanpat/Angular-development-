@@ -1,0 +1,72 @@
+.navbar{
+    padding: 2px;
+    margin-top: -1px;
+  }
+
+.img-fluid{
+    display: block;
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-left: 2px;
+    border-radius: 8px;
+    image-resolution: top 400px;
+    border: rgb(92, 104, 114);
+}
+
+.img-thumbnail{
+    display:block;
+    border: none;
+    image-resolution: top 800px;
+    border-color: #0f585e;
+
+}
+
+.btn {
+    color:whitesmoke;
+    border-width: 1px;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 15px;
+    margin-right: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+  .container-fluid{
+    padding-left: 6%;
+    padding-right: 6%;
+    position: relative;
+    margin-top: 8vmin;
+ }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #f2f8f9;
+    border-radius: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: antiquewhite;
+    border: 1px solid #f2f8f9;
+    transition: transform 0.15s ease-out;
+    transform-origin: 50% 50%;
+    transform: scale;
+    overflow: auto;
+}
+
+.card:hover{
+    box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.2);
+    background-color: white;
+    border: 1px solid #0f585e;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+    transform: scale(1.2);
+}
+
+.card-title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.card-text{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}

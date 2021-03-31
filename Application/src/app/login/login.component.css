@@ -1,0 +1,76 @@
+/* set form background colour*/
+form{
+    background: #fff;
+    position: relative;
+    bottom:15px;
+
+   
+}
+/* set padding and size of th form */
+
+.form-container{
+	border-radius: 20px;
+    padding: 40px;
+    padding-bottom: 2px;
+    border-style: ridge;
+    border-color:cornflowerblue;
+}
+
+.form-group h2{
+    position: relative;
+    top:-10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    font-size:40px;
+
+}
+
+.label{
+    font-family:cursive,Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-style: inherit;
+    margin-top:-150px;
+    position: relative; 
+    bottom:10px;
+}
+
+.btn {
+  
+    font-size: x-large;
+    font-weight: 500;
+    padding: 8px 40px;
+    position: relative;
+    bottom: 25px;
+
+}
+
+alert {
+    position: relative;
+    bottom: 15pt;
+    text-decoration-style: solid;
+    text-emphasis: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.form-check label {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    bottom: 16px;
+  
+}
+.form-check-input{
+    margin-right: .5em;
+}
+
+input{
+    border-style: double;
+    border-color: rgb(209, 199, 182);
+    position: relative;
+    bottom: 15px;
+}
+
+.invalid-feedback div{
+    position: relative;
+    bottom: 15px;
+}
